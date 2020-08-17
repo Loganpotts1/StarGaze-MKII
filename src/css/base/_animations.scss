@@ -1,0 +1,28 @@
+//---NAVBAR---
+@keyframes hamburger {
+    0% {
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(60px) rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+
+@keyframes shrink-grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

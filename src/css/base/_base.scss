@@ -1,4 +1,12 @@
+// VARIABLES
+:root {
+
+}
+
 $bp-medium: 700px;
+//
+
+
 
 *,
 *::before,
@@ -9,7 +17,7 @@ $bp-medium: 700px;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 10px/16px = 62.5%, making 1rem = 10px
 }
 
 body {

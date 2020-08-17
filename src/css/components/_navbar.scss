@@ -10,7 +10,7 @@
 
     &__logo {
         font-size: 3rem;
-        margin-left: 20px;
+        margin-left: calc(20px + 1vw);
     }
 
     &__items {
@@ -20,7 +20,7 @@
         grid-template-columns: repeat(3, max-content);
         grid-column-gap: 3rem;
         align-items: center;
-        margin-right: 20px;
+        margin-right: calc(20px + 1vw);
 
         @media screen and (max-width: $bp-medium) {
             grid-column: 3 / 4;
@@ -64,7 +64,7 @@
 .moon-menu {
     display: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: calc(20px + 1vw);
     border-radius: 50%;
     transition: all .8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
@@ -75,32 +75,5 @@
         &:active {
             transform: scale(.8);
         }
-    }
-}
-
-@keyframes hamburger {
-    0% {
-        transform: rotateX(-100deg);
-        transform-origin: top;
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(60px) rotateX(0deg);
-        transform-origin: top;
-        opacity: 1;
-    }
-}
-
-@keyframes shrink-grow {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(.9);
-    }
-
-    100% {
-        transform: scale(1);
     }
 }

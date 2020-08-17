@@ -7,7 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./pages/LandingPage";
 
 export default function App() {
   return (

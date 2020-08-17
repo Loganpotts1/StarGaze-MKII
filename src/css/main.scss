@@ -1,2 +1,6 @@
-@import "./base";
-@import "./navbar";
+@import "base/base";
+@import "base/animations";
+
+@import "layout/container";
+
+@import "components/navbar";

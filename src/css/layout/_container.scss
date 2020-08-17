@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-rows: min-content;
+
+    &--landing-page {
+        background: radial-gradient(circle, rgba(90,139,183,1) 0%, rgb(80, 57, 117) 100%);
+        min-height: 100vh;
+    }
+
+    &--photos-page {
+
+    }
+
+    &--audio-page {
+
+    }
+
+    &--mars-page {
+
+    }
+}

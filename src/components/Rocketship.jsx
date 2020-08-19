@@ -3,7 +3,7 @@ import React from "react";
 export default function Rocketship() {
 
     return (
-        <svg className="rocket-ship" width="651" height="466" viewBox="0 0 651 466" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="rocketship" width="651" height="466" viewBox="0 0 651 466" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="RocketShip">
             <g clip-path="url(#clip0)">
             <g id="SmallPlanet3">

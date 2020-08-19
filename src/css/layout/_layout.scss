@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-rows: min-content;
+
+    &--landing-page {
+        background-image: radial-gradient(circle, rgba(90,139,183,.9) 0%, rgba(80, 57, 117, .9) 100%), url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+
+        .content {
+            display: grid;
+            grid-template-columns: 
+            [full-start] 1fr [center-start] 
+            repeat(8, [col-start] minmax(min-content, 16rem) [col-end] ) 
+            [center-end] 1fr [full-end];
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 3rem;
+            align-items: center;
+        
+            //TEST
+            min-height: calc(100vh - 60px);
+            //
+
+            .header {
+                grid-column: col-start 6 / center-end;
+                grid-row: 1 / 2;
+            }
+
+            .cta {
+                grid-column: col-start 6 / center-end;
+                grid-row: 2 / 3;
+                align-self: start;
+            }
+        }
+    }
+
+    &--photos-page {
+
+    }
+
+    &--audio-page {
+
+    }
+
+    &--mars-page {
+
+    }
+}

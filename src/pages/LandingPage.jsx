@@ -17,40 +17,42 @@ export default function LandingPage() {
             <Navbar />
 
 
-            <Rocketship />
+            <main className="content">
 
+                <Rocketship />
 
-            <div className="header">
+                <div className="header">
 
-                <HeadingOne 
-                text="Explore with NASA" 
-                />
-
-                <p className="header__text">
-                    Look at pictures and podcasts <br/>
-                    from behind the scenes <br/>
-                    at the international space station
-                </p>
-
-            </div>
-
-
-            <div className="cta">
-
-                <HeadingTwo 
-                text={["What will be", <br/>, "your destination?"]} 
-                />
-
-                <div className="cta__buttons">
-                    <ButtonDuoFirst 
-                    text="Earth" 
+                    <HeadingOne 
+                    text="Explore with NASA" 
                     />
-                    <ButtonDuoLast 
-                    text="Mars" 
-                    />
+
+                    <p className="header__text">
+                        Look at pictures and podcasts <br/>
+                        from behind the scenes <br/>
+                        at the international space station
+                    </p>
+
                 </div>
 
-            </div>
+                <div className="cta">
+
+                    <HeadingTwo 
+                    text={["What will be", <br/>, "your destination?"]} 
+                    />
+
+                    <div className="cta__buttons">
+                        <ButtonDuoFirst 
+                        text="Earth" 
+                        />
+                        <ButtonDuoLast 
+                        text="Mars" 
+                        />
+                    </div>
+
+                </div>
+
+            </main>
 
 
         </div>

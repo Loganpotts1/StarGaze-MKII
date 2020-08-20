@@ -1,0 +1,10 @@
+.cta {
+    grid-column: col-start 5 / center-end;
+    grid-row: 2 / 3;
+    align-self: start;
+    text-align: center;
+    padding-top: 5rem;
+
+    &__buttons {
+    }
+}

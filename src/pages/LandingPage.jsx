@@ -38,7 +38,7 @@ export default function LandingPage() {
                 <div className="cta">
 
                     <HeadingTwo 
-                    text={["What will be", <br/>, "your destination?"]} 
+                    text="What will be your destination?" 
                     />
 
                     <div className="cta__buttons">

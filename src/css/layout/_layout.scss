@@ -1,6 +1,7 @@
 .container {
     display: grid;
     grid-template-rows: min-content;
+    color: #fff;
 
     &--landing-page {
         background-image: radial-gradient(circle, rgba(90,139,183,.9) 0%, rgba(80, 57, 117, .9) 100%), url(../images/hero.jpg);
@@ -18,19 +19,8 @@
             align-items: center;
         
             //TEST
-            min-height: calc(100vh - 60px);
+            min-height: calc(100vh - 80px);
             //
-
-            .header {
-                grid-column: col-start 6 / center-end;
-                grid-row: 1 / 2;
-            }
-
-            .cta {
-                grid-column: col-start 6 / center-end;
-                grid-row: 2 / 3;
-                align-self: start;
-            }
         }
     }
 

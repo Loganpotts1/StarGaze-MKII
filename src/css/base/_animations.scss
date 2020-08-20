@@ -6,7 +6,7 @@
         opacity: 0;
     }
     100% {
-        transform: translateY(60px) rotateX(0deg);
+        transform: translateY(calc(4rem + 70px)) rotateX(0deg);
         transform-origin: top;
         opacity: 1;
     }

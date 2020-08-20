@@ -6,6 +6,17 @@
 $bp-medium: 700px;
 //
 
+//FONTS
+@font-face {
+    font-family: Ailerons;
+    src: url(../fonts/Ailerons-Regular.otf) format("opentype");
+}
+@font-face {
+    font-family: Polya;
+    src: url(../fonts/POLYA.otf) format("opentype");
+}
+//
+
 
 
 *,
@@ -18,6 +29,10 @@ $bp-medium: 700px;
 
 html {
     font-size: 62.5%; // 10px/16px = 62.5%, making 1rem = 10px
+
+    @media screen and (max-width: $bp-medium) {
+        font-size: 45%;
+    }
 }
 
 body {

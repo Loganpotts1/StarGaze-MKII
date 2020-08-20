@@ -1,13 +1,27 @@
 .nav {
+    width: 95%;
+    justify-self: center;
     display: grid;
     grid-template-columns: max-content 1fr max-content;
-    grid-template-rows: 60px;
+    grid-template-rows: 80px;
     align-items: center;
-    border-bottom: 1px solid rgba(#fff, .8);
+    border-bottom: 1px solid rgba(#fff, .3);
+
+    @media screen and (max-width: $bp-medium) {
+        width: 100%;
+        border-bottom: none;
+        background-color: #fff;
+    }
 
     &__logo {
-        font-size: 3rem;
+        font-family: "Ailerons";
+        font-size: 30px;
         margin-left: calc(20px + 1vw);
+
+        @media screen and (max-width: $bp-medium) {
+            color: rgba(80, 57, 117, .9);
+            z-index: 2;
+        }
     }
 
     &__items {
@@ -18,27 +32,28 @@
         grid-column-gap: 3rem;
         align-items: center;
         margin-right: calc(20px + 1vw);
+        font-family: "Exo 2";
+        font-weight: 200;
 
         @media screen and (max-width: $bp-medium) {
             grid-column: 3 / 4;
             grid-template-columns: max-content;
+            grid-row-gap: 2rem;
             justify-items: center;
             opacity: 0;
             margin-right: 0;
 
             &--active {
                 width: 100%;
-                padding: 1rem 0;
+                background-color: #fff;
+                padding: 4rem 0;
                 border-bottom-left-radius: 12px;
                 border-bottom-right-radius: 12px;
-                animation: hamburger .8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                opacity: 1;
                 position: absolute;
+                opacity: 1;
+                z-index: 1;
                 justify-content: center;
-
-                //Test
-                background-color: lightcoral;
-                //
+                animation: hamburger .8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
             }
         }
     }
@@ -49,11 +64,17 @@
 
     &__link {
         font-size: 1.6rem;
+        text-transform: uppercase;
 
         &:link,
         &:visited {
             text-decoration: none;
-            color: #000;
+            color: #fff;
+
+            @media screen and (max-width: $bp-medium) {
+                color: rgba(80, 57, 117, .9);
+                font-size: 2.5rem;
+            }
         }
     }
 }
@@ -64,6 +85,8 @@
     margin-right: calc(20px + 1vw);
     border-radius: 50%;
     transition: all .8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    background-image: radial-gradient(circle, rgba(90,139,183,.9) 0%, rgba(80, 57, 117, .9) 100%);
+    z-index: 2;
 
     @media screen and (max-width: $bp-medium) {
         display: inherit;

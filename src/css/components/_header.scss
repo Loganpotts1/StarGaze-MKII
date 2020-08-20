@@ -1,0 +1,39 @@
+.header {
+    grid-column: col-start 5 / center-end;
+    grid-row: 1 / 2;
+    text-align: center;
+    position: relative;
+    transition: all .5s ease-in-out;
+
+    &__text {
+        text-transform: uppercase;
+        font-family: "Exo 2";
+        font-weight: 100;
+        font-size: 2rem;
+        font-style: italic;
+        padding-top: 2rem;
+        letter-spacing: .2rem;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: -40%;
+        content: "";
+        height: 180%;
+        width: 100%;
+        border: 1px solid rgba(#fff, .3);
+        border-radius: 12px;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+}

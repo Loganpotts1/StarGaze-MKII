@@ -5,24 +5,14 @@
     position: relative;
     transition: all .5s ease-in-out;
 
-    &__text {
-        text-transform: uppercase;
-        font-family: "Exo 2";
-        font-weight: 100;
-        font-size: 2rem;
-        font-style: italic;
-        padding-top: 2rem;
-        letter-spacing: .2rem;
-    }
-
     &::before {
+        content: "";
         position: absolute;
         left: 0;
         top: -40%;
-        content: "";
         height: 180%;
         width: 100%;
-        border: 1px solid rgba(#fff, .3);
+        border: 1px solid rgba(var(--color-primary), .3);
         border-radius: 12px;
         opacity: 0;
         transition: all .5s ease-in-out;
@@ -36,4 +26,30 @@
         }
     }
 
+    @media screen and (max-width: $bp-larger) {
+        
+        &:hover {
+            transform: none;
+    
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-medium) {
+        grid-column: center-start / col-end 7;
+        grid-row: 1 / 2;
+        text-align: right;
+    }
+
+    &__text {
+        font-family: var(--font-primary);
+        font-weight: 100;
+        font-size: 2rem;
+        font-style: italic;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        padding-top: 2rem;
+    }
 }

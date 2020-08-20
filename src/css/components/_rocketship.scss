@@ -3,4 +3,9 @@
     grid-row: 1 / -1;
     width: 150%;
     margin: 0 -40%;
+
+    @media screen and (max-width: $bp-medium), screen and (min-width: $bp-small) {
+        width: 120%;
+        margin: 1rem -25%;
+    }
 }

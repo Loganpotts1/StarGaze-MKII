@@ -1,10 +1,20 @@
 .cta {
+    align-self: start;
     grid-column: col-start 5 / center-end;
     grid-row: 2 / 3;
-    align-self: start;
-    text-align: center;
     padding-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $bp-medium) {
+        align-self: center;
+        grid-column: center-start / center-end;
+        grid-row: 3 / 4;
+        padding-top: 0;
+        margin-top: -15%;
+    }
 
     &__buttons {
+        margin-top: 1.5rem;
     }
 }

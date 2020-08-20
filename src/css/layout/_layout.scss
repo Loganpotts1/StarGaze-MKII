@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-rows: min-content;
-    color: #fff;
+    color: var(--color-primary);
 
     &--landing-page {
         background-image: radial-gradient(circle, rgba(90,139,183,.9) 0%, rgba(80, 57, 117, .9) 100%), url(../images/hero.jpg);
@@ -21,6 +21,11 @@
             //TEST
             min-height: calc(100vh - 80px);
             //
+
+            @media screen and (max-width: $bp-medium) {
+                grid-template-rows: repeat(3, 1fr);
+                grid-row-gap: 0;
+            }
         }
     }
 

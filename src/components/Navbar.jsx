@@ -5,7 +5,10 @@ export default function Navbar() {
 
     function dropDown() {
         const navItems = document.querySelector(".nav__items");
+        const blur = document.querySelector(".blur");
+        
         navItems.classList.toggle("nav__items--active");
+        blur.classList.toggle("blur--active");
     }
 
     return (

@@ -56,7 +56,6 @@ export default function LandingPage() {
 
             <div className="blur"></div>
 
-
         </div>
     );
 }

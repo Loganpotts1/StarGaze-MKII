@@ -1,10 +1,13 @@
-@import "base/base";
-@import "base/animations";
-@import "base/headings";
+@import 
+"base/base", 
+"base/animations", 
+"base/headings",
 
-@import "layout/layout";
+"components/navbar",
+"components/rocketship",
+"components/header",
+"components/cta",
 
-@import "components/navbar";
-@import "components/rocketship";
-@import "components/header";
-@import "components/cta";
+"layout/layout";
+
+

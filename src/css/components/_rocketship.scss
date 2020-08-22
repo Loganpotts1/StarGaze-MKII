@@ -8,4 +8,47 @@
         width: 120%;
         margin: 1rem -25%;
     }
+
+    &__craft {
+        
+        &--main {
+            fill: rgba(var(--rocket-color-main), 1);
+        }
+
+        &--main-2 {
+            fill: rgba(var(--rocket-color-main), 1);
+            filter: brightness(90%);
+        }
+
+        &--secondary {
+            fill: rgba(var(--rocket-color-secondary), 1);
+        }
+    }
+
+    &__planet {
+        stop-color: rgba(var(--rocket-color-planets), 1);
+    }
+
+    &__moon {
+        fill: rgba(var(--rocket-color-moons), 1);
+    }
+
+    &__star {
+        fill: rgba(var(--rocket-color-stars), 1);
+    }
+
+    &__flame {
+
+        &--color-1 {
+            stop-color: rgba(var(--rocket-color-flame-top), 1);
+        }
+
+        &--color-2 {
+            stop-color: rgba(var(--rocket-color-flame-middle), 1);
+        }
+
+        &--color-3 {
+            stop-color: rgba(var(--rocket-color-flame-bottom), 1);
+        }
+    }
 }

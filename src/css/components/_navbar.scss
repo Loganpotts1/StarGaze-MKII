@@ -5,7 +5,7 @@
     align-items: center;
     justify-self: center;
     width: 95%;
-    border-bottom: 1px solid rgba(var(--font-color), .3);
+    border-bottom: 1px solid rgba(var(--color-primary), .3);
 
     @media screen and (max-width: $bp-medium) {
         width: 100%;

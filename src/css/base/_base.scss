@@ -2,9 +2,15 @@
 :root {
     --font-display: "Ailerons";
     --font-primary: "Exo 2";
+    --font-color: 255, 255, 255;
+    --font-color-alt: 80, 57, 116;
 
-    --color-primary: #fff;
-    --color-alt: rgba(80, 57, 117, 1);
+    --color-primary: 255, 255, 255;
+    --color-secondary: 80, 57, 116;
+
+
+    --bg-gradient-inner: 90,139,183;
+    --bg-gradient-outer: 80, 57, 116;
 }
 
 $bp-larger: 1200px;

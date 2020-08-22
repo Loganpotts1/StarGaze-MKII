@@ -5,12 +5,12 @@
     align-items: center;
     justify-self: center;
     width: 95%;
-    border-bottom: 1px solid rgba(var(--color-primary), .3);
+    border-bottom: 1px solid rgba(var(--font-color), .3);
 
     @media screen and (max-width: $bp-medium) {
         width: 100%;
         border-bottom: none;
-        background-color: var(--color-primary);
+        background-color: rgba(var(--color-primary), 1);
     }
 
     &__logo {
@@ -19,7 +19,7 @@
         margin-left: calc(20px + 1vw);
 
         @media screen and (max-width: $bp-medium) {
-            color: var(--color-alt);
+            color: rgba(var(--font-color-alt), 1);
             z-index: 2;
         }
     }
@@ -28,8 +28,9 @@
         display: grid;
         grid-template-columns: repeat(3, max-content);
         grid-column-gap: 3rem;
-        grid-column: 3 / 4;
+        grid-column: 3 / 3;
         align-items: center;
+        justify-content: center;
         font-family: var(--font-primary);
         font-weight: 300;
         list-style: none;
@@ -51,7 +52,7 @@
                 border-bottom-left-radius: 12px;
                 border-bottom-right-radius: 12px;
                 z-index: 1;
-                background-color: var(--color-primary);
+                background-color: rgba(var(--color-primary), 1);
                 animation: hamburger .8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
             }
         }
@@ -68,11 +69,11 @@
         &:link,
         &:visited {
             text-decoration: none;
-            color: var(--color-primary);
+            color: rgba(var(--font-color), 1);
 
             @media screen and (max-width: $bp-medium) {
                 font-size: 2.5rem;
-                color: var(--color-alt);
+                color: rgba(var(--font-color-alt), 1);
                 
             }
         }
@@ -84,7 +85,7 @@
     display: none;
     border-radius: 50%;
     margin-right: calc(20px + 1vw);
-    background-image: radial-gradient(circle, rgba(90,139,183,.9) 0%, rgba(80, 57, 117, .9) 100%);
+    background-image: radial-gradient(circle, rgba(var(--bg-gradient-inner),.9) 0%, rgba(var(--bg-gradient-outer), .9) 100%);
     transition: all .8s cubic-bezier(0.175, 0.885, 0.320, 1.275);
     z-index: 2;
 

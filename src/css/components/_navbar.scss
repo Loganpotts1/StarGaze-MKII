@@ -54,6 +54,7 @@
                 z-index: 1;
                 background-color: rgba(var(--color-primary), 1);
                 animation: hamburger .8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+                transition: all .3s;
             }
         }
     }
@@ -96,5 +97,9 @@
         &:active {
             transform: scale(.8);
         }
+    }
+
+    &__fill {
+        fill: rgba(var(--color-primary), 1);
     }
 }

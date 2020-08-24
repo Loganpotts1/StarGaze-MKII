@@ -3,12 +3,10 @@
     0% {
         transform: rotateX(-100deg);
         transform-origin: top;
-        opacity: 0;
     }
     100% {
         transform: translateY(calc(4rem + 70px)) rotateX(0deg);
         transform-origin: top;
-        opacity: 1;
     }
 }
 
@@ -24,5 +22,133 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+// ROCKETSHIP
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-1px, 1px);
+    }
+    20% {
+        transform: translate(-1.5px, 1.5px);
+    }
+    10% {
+        transform: translate(-1px, -1px);
+    }
+    40% {
+        transform: translate(-1.5px, -1.5px);
+    }
+    10% {
+        transform: translate(1px, 1px);
+    }
+    60% {
+        transform: translate(1.5px, 1.5px);
+    }
+    10% {
+        transform: translate(1px, -1px);
+    }
+    80% {
+        transform: translate(1.5px, -1.5px);
+    }
+    10% {
+        transform: translate(1px, -1px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+  
+@keyframes pulsate-up {
+    0% {
+        transform: scale(1.8);
+    }
+    10% {
+        transform: scale(1.6);
+    }
+    20% {
+        transform: scale(1.4);
+    }  
+    30% {
+        transform: scale(1.35);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1.35);
+    }
+    80% {
+        transform: scale(1.4);
+    }
+    90% {
+        transform: scale(1.6);
+    }
+    100% {
+         transform: scale(1.8);
+    }
+}
+
+@keyframes pulsate-down {
+    0% {
+        transform: scale(.6);
+        opacity: .1;
+    }
+    10% {
+        transform: scale(.65);
+        opacity: .5;
+    }
+    25% {
+        transform: scale(.7);
+        opacity: .8;
+    }  
+    40% {
+        transform: scale(.8);
+        opacity: .9;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    65% {
+        transform: scale(.8);
+        opacity: .9;
+    }
+    75% {
+        transform: scale(.7);
+        opacity: .8;
+    }
+      90% {
+        transform: scale(.65);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(.6);
+        opacity: .1;
+    }
+}
+
+@keyframes ping {
+    0% {
+        transform: scale(0.5);
+        opacity: 3;
+    }
+    80% {
+        transform: scale(3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
     }
 }

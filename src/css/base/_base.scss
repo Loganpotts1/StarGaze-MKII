@@ -9,7 +9,7 @@
     --color-secondary: 80, 57, 116;
 
 
-    --bg-gradient-inner: 90,139,183;
+    --bg-gradient-inner: 90, 139, 183;
     --bg-gradient-outer: 80, 57, 116;
 
     --rocket-color-main: 255, 255, 255;
@@ -20,6 +20,70 @@
     --rocket-color-flame-top: 255, 255, 255;
     --rocket-color-flame-middle: 252, 204, 99;
     --rocket-color-flame-bottom: 245, 95, 68;
+
+}
+
+[data-theme="1969"] {
+
+    --font-color: 255, 255, 234;
+    --font-color-alt: 47, 37, 25;
+
+    --color-primary: 255, 255, 255;
+    --color-secondary: 255, 67, 1;
+
+    --bg-gradient-inner: 0, 0, 0;
+    --bg-gradient-outer: 43, 44, 40;
+
+    --rocket-color-main: 255, 255, 255;
+    --rocket-color-secondary: 43, 44, 40;
+    --rocket-color-planets: 0, 0, 0;
+    --rocket-color-moons: 255, 255, 234;
+    --rocket-color-stars: 255, 255, 234;
+    --rocket-color-flame-top: 255, 255, 255;
+    --rocket-color-flame-middle: 255, 255, 255;
+    --rocket-color-flame-bottom: 138, 137, 124;
+    
+}
+
+[data-theme="martian"] {
+
+    --font-color: 55, 6, 23;
+    --font-color-alt: 244, 140, 6;
+
+    --color-primary: 55, 6, 23;
+
+    --bg-gradient-inner: 244, 140, 6;
+    --bg-gradient-outer: 232, 93, 4;
+
+    --rocket-color-main: 255, 255, 234;
+    --rocket-color-secondary: 55, 6, 23;
+    --rocket-color-planets: 250, 163, 7;
+    --rocket-color-moons: 55, 6, 23;
+    --rocket-color-stars: 55, 6, 23;
+    --rocket-color-flame-top: 255, 255, 234;
+    --rocket-color-flame-middle: 232, 93, 4;
+    --rocket-color-flame-bottom: 55, 6, 23;
+}
+
+[data-theme="martian-alt"] {
+
+    --font-color: 244, 140, 6;
+    --font-color-alt: 55, 6, 23;
+
+    --color-primary: 244, 140, 6;
+
+    --bg-gradient-inner: 55, 6, 23;
+    --bg-gradient-outer: 3, 7, 30;
+
+    --rocket-color-main: 244, 140, 6;
+    --rocket-color-secondary: 3, 7, 30;
+    --rocket-color-planets: 3, 7, 30;
+    --rocket-color-moons: 244, 140, 6;
+    --rocket-color-stars: 244, 140, 6;
+    --rocket-color-flame-top: 255, 255, 255;
+    --rocket-color-flame-middle: 90, 139, 183;
+    --rocket-color-flame-bottom: 80, 57, 116;
+
 
 }
 

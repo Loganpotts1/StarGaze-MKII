@@ -1,0 +1,54 @@
+.btn-duo {
+    cursor: pointer;
+    border: none;
+    height: 5rem;
+    width: 20rem;
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: var(--btn-color);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    position: relative;
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--btn-color-hover);
+        transform: translateY(0);
+        transition: transform .2s;
+
+    }
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
+}
+
+.btn-wrap {
+    transition: all .2s;
+
+    &:hover {
+        filter: drop-shadow(0 1rem 2rem rgba(var(--btn-color-shadow), .2));
+    }
+
+    &:active {
+        filter: drop-shadow(0 .6rem 1.5rem rgba(var(--btn-color-shadow), .3));
+    }
+}

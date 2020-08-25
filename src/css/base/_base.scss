@@ -2,17 +2,17 @@
 :root {
     --font-display: "Ailerons";
     --font-primary: "Exo 2";
-    --font-color: 255, 255, 255; // All of these are RGB codes
+    --font-color: 252, 255, 252; // All of these are RGB codes
     --font-color-alt: 80, 57, 116;
 
-    --color-primary: 255, 255, 255;
+    --color-primary: 252, 255, 252;
     --color-secondary: 80, 57, 116;
 
 
     --bg-gradient-inner: 90, 139, 183;
     --bg-gradient-outer: 80, 57, 116;
 
-    --rocket-color-main: 255, 255, 255;
+    --rocket-color-main: 252, 255, 252;
     --rocket-color-secondary: 83, 84, 97;
     --rocket-color-planets: 128, 128, 128;
     --rocket-color-moons: 255, 255, 255;
@@ -21,7 +21,13 @@
     --rocket-color-flame-middle: 252, 204, 99;
     --rocket-color-flame-bottom: 245, 95, 68;
 
+    --btn-color: 252, 255, 252;
+    --btn-color-hover: 245, 95, 68;
+    --btn-color-shadow: 0, 0, 0;
+
 }
+
+// CREATE AN (ON HOVER) PROMPT WHEN FIRST ARRIVING TO THE PAGE, IT WILL ASK THE USER WHAT THEM THEY WOULD LIKE
 
 [data-theme="1969"] {
 
@@ -47,26 +53,6 @@
 
 [data-theme="martian"] {
 
-    --font-color: 55, 6, 23;
-    --font-color-alt: 244, 140, 6;
-
-    --color-primary: 55, 6, 23;
-
-    --bg-gradient-inner: 244, 140, 6;
-    --bg-gradient-outer: 232, 93, 4;
-
-    --rocket-color-main: 255, 255, 234;
-    --rocket-color-secondary: 55, 6, 23;
-    --rocket-color-planets: 250, 163, 7;
-    --rocket-color-moons: 55, 6, 23;
-    --rocket-color-stars: 55, 6, 23;
-    --rocket-color-flame-top: 255, 255, 234;
-    --rocket-color-flame-middle: 232, 93, 4;
-    --rocket-color-flame-bottom: 55, 6, 23;
-}
-
-[data-theme="martian-alt"] {
-
     --font-color: 244, 140, 6;
     --font-color-alt: 55, 6, 23;
 
@@ -79,7 +65,7 @@
     --rocket-color-secondary: 3, 7, 30;
     --rocket-color-planets: 3, 7, 30;
     --rocket-color-moons: 244, 140, 6;
-    --rocket-color-stars: 244, 140, 6;
+    --rocket-color-stars: 255, 186, 8;
     --rocket-color-flame-top: 255, 255, 255;
     --rocket-color-flame-middle: 90, 139, 183;
     --rocket-color-flame-bottom: 80, 57, 116;

@@ -3,18 +3,22 @@ import React from "react";
 export default function ButtonDuoFirst(props) {
 
     return (
-        <button className="btn-duo btn-duo--1">
-            {props.text}
-        </button>
+        <span className="btn-wrap">
+            <button className="btn-duo btn-duo--1">
+                {props.text}
+            </button>
+        </span>
     );
 }
 
 function ButtonDuoLast(props) {
 
     return (
-        <button className="btn-duo btn-duo--2">
-            {props.text}
-        </button>
+        <span className="btn-wrap">
+            <button className="btn-duo btn-duo--2">
+                {props.text}
+            </button>
+        </span>
     );
 }
 

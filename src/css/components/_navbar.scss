@@ -61,7 +61,15 @@
     }
 
     &__item {
+        transition: all .2s;
 
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        &:active {
+            transform: translateY(-1px);
+        }
     }
 
     &__link {

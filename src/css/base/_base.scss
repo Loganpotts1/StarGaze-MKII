@@ -1,5 +1,6 @@
 // VARIABLES
 :root {
+    
     --font-display: "Ailerons";
     --font-primary: "Exo 2";
     --font-color: 252, 255, 252; // All of these are RGB codes
@@ -25,7 +26,6 @@
     --btn-color-hover-top: 252, 204, 99;
     --btn-color-hover-bottom: 245, 95, 68;
     --btn-color-shadow: 0, 0, 0;
-
 }
 
 // CREATE AN (ON HOVER) PROMPT WHEN FIRST ARRIVING TO THE PAGE, IT WILL ASK THE USER WHAT THEM THEY WOULD LIKE
@@ -49,7 +49,6 @@
     --rocket-color-flame-top: 255, 255, 255;
     --rocket-color-flame-middle: 255, 255, 255;
     --rocket-color-flame-bottom: 138, 137, 124;
-    
 }
 
 [data-theme="martian"] {
@@ -70,8 +69,6 @@
     --rocket-color-flame-top: 255, 255, 255;
     --rocket-color-flame-middle: 90, 139, 183;
     --rocket-color-flame-bottom: 80, 57, 116;
-
-
 }
 
 $bp-larger: 1200px;

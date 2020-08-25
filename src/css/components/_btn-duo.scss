@@ -1,6 +1,9 @@
 .btn-duo {
     cursor: pointer;
     border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 5rem;
     width: 22rem;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
@@ -14,10 +17,6 @@
     position: relative;
     transition: all .3s;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
     &:hover {
         color: rgba(var(--font-color), 1);
         transform: translateY(-3px);
@@ -26,10 +25,6 @@
             width: 100%;
             transform: scaleY(1);
         }
-    }
-
-    &:active {
-        transform: translateY(-1px);
     }
 
     &::before {
@@ -43,11 +38,14 @@
         background-image: linear-gradient(rgba(var(--btn-color-hover-top), 1), rgba(var(--btn-color-hover-bottom), 1));
         transform: scaleY(0);
         transition: transform .1s, width cubic-bezier(1,0,0,1) .2s .1s, background-color .1s;
-        z-index: 1;
+    }
+
+    &:active {
+        transform: translateY(-1px);
     }
 
     &__text {
-        z-index: 60;
+        z-index: 1;
     }
 
     &--1 {

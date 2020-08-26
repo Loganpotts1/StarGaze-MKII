@@ -1,6 +1,7 @@
 .container {
     display: grid;
-    grid-template-rows: min-content;
+    grid-template-columns: 100vw;
+    grid-template-rows: 80px, min-content;
     color: rgba(var(--font-color), 1);
 
     &--landing-page {
@@ -9,6 +10,8 @@
         background-position: center;
 
         .content {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
             display: grid;
             grid-template-columns: 
             [full-start] 1fr [center-start] 
@@ -19,7 +22,7 @@
             align-items: center;
         
             //TEST
-            min-height: calc(100vh - 80px);
+            min-height: calc(100vh - 81px);
             //
 
             @media screen and (max-width: $bp-medium) {

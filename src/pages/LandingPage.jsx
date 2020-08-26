@@ -7,8 +7,15 @@ import {
     ButtonDuoFirst,
     ButtonDuoLast
 } from "../components/ButtonDuo";
+import Popup from "../components/Popup";
 
 export default function LandingPage() {
+
+    const [popupToggled, setPopupToggled] = React.useState(true);
+
+    function togglePopup() {
+        setPopupToggled(!popupToggled);
+    }
 
     return (
         <div className="container container--landing-page">
@@ -28,7 +35,7 @@ export default function LandingPage() {
                     />
 
                     <p className="header__text">
-                        Look at pictures and podcasts <br/>
+                        Discover pictures and podcasts <br/>
                         from behind the scenes <br/>
                         at the international space station
                     </p>
@@ -53,6 +60,10 @@ export default function LandingPage() {
                 </div>
 
             </main>
+
+            {
+                popupToggled && <Popup close={() => togglePopup()}/>
+            }
 
         </div>
     );

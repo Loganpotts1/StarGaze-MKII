@@ -13,12 +13,12 @@
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
-    color: rgba(var(--font-color-alt), 1);
+    color: rgba(var(--btn-font-color), 1);
     position: relative;
     transition: all .3s;
 
     &:hover {
-        color: rgba(var(--font-color), 1);
+        color: rgba(var(--btn-font-color-alt), 1);
         transform: translateY(-3px);
 
         &::before {
@@ -42,6 +42,16 @@
 
     &:active {
         transform: translateY(-1px);
+    }
+
+    @media screen and (max-width: $bp-medium) {
+        color: rgba(var(--btn-font-color-alt), 1);
+        transform: translateY(-3px);
+    
+        &::before {
+            width: 100%;
+            transform: scaleY(1);
+        }
     }
 
     &__text {

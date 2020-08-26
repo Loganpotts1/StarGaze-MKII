@@ -1,6 +1,6 @@
 // VARIABLES
 :root {
-    
+
     --font-display: "Ailerons";
     --font-primary: "Exo 2";
     --font-color: 252, 255, 252; // All of these are RGB codes
@@ -22,6 +22,8 @@
     --rocket-color-flame-middle: 252, 204, 99;
     --rocket-color-flame-bottom: 245, 95, 68;
 
+    --btn-font-color: 80, 57, 116;
+    --btn-font-color-alt: 252, 255, 252;
     --btn-color: 252, 255, 252;
     --btn-color-hover-top: 252, 204, 99;
     --btn-color-hover-bottom: 245, 95, 68;
@@ -69,6 +71,8 @@
     --rocket-color-flame-top: 255, 255, 255;
     --rocket-color-flame-middle: 90, 139, 183;
     --rocket-color-flame-bottom: 80, 57, 116;
+
+    --btn-color: ;
 }
 
 $bp-larger: 1200px;

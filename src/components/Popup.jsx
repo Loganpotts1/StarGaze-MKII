@@ -2,8 +2,15 @@ import React from "react";
 import HeadingTwo from "./HeadingTwo";
 
 export default function Popup(props) {
+    
+    
+    
 
-    const body = document.querySelector("body");
+    function setTheme(theme) {
+        const body = document.querySelector("body");
+
+        body.setAttribute("data-theme", `${theme}`);
+    }
 
     return (
         <div className="popup">
@@ -12,7 +19,7 @@ export default function Popup(props) {
             <div className="popup__content">
 
                 <div className="popup__close">
-                    <span>
+                    <span onClick={props.close}>
                         X
                     </span>
                 </div>
@@ -22,13 +29,13 @@ export default function Popup(props) {
                 </h2>
 
                 <ul className="popup__list">
-                    <li className="popup__list-item" onClick={() => {body.setAttribute("data-theme", "default")}}>
+                    <li className="popup__list-item" onMouseEnter={() => setTheme(0)} onClick={props.close}>
                         Default
                     </li>
-                    <li className="popup__list-item" onClick={() => {body.setAttribute("data-theme", "martian")}}>
+                    <li className="popup__list-item" onMouseEnter={() => setTheme("martian")} onClick={props.close}>
                         Martian
                     </li>
-                    <li className="popup__list-item" onClick={() => {body.setAttribute("data-theme", "1969")}}>
+                    <li className="popup__list-item" onMouseEnter={() => setTheme(1969)} onClick={props.close}>
                         1969
                     </li>
                 </ul>

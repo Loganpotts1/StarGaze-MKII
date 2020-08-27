@@ -8,24 +8,50 @@
     width: 100%;
     font-family: var(--font-primary);
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     z-index: 3;
 
     &__content {
         display: grid;
-        grid-template-columns: 1rem max-contents 1rem;
-        grid-template-rows: min-content min-content 10rem;
-        grid-row-gap: 1rem;
+        grid-template-columns: 4rem max-content 4rem;
+        grid-template-rows: min-content min-content 20rem;
+        grid-row-gap: 1.5rem;
         justify-items: center;
-        padding: 1rem;
-        border: 1px solid rgba(255, 255, 255, .3);
+        background-color: rgba(0, 0, 0, .2);
+        border: 1px solid rgba(var(--color-primary), .4);
         border-radius: 12px;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        }
     }
 
     &__close {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
-        justify-self: start;
+        justify-self: stretch;
+        display: flex;
+        justify-content: start;
+        border-bottom: 1px solid rgba(var(--color-primary), .4);
+
+        span {
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: 100;
+            margin: 1rem 1.5rem;
+            transition: all .2s;
+
+            &:hover {
+                font-weight: 300;
+            }
+        }
+    }
+
+    &__heading {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
     }
 
     &__list {
@@ -33,12 +59,36 @@
         grid-row: 3 / 4;
         display: grid;
         align-content: center;
-        grid-row-gap: 1rem;
+        grid-row-gap: 2.5rem;
         list-style: none;
         text-align: center;
     }
 
     &__list-item {
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 200;
+        position: relative;
 
+        &:hover {
+
+            &::before {
+                transform: scaleY(1);
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 140%;
+            margin-left: -20%;
+            border-left: 1px solid rgba(var(--color-primary), .4);
+            border-right: 1px solid rgba(var(--color-primary), .4);
+            transform: scaleY(0);
+            transition: all .2s;
+        }
     }
 }

@@ -7,8 +7,6 @@
     --font-color-alt: 80, 57, 116;
 
     --color-primary: 252, 255, 252;
-    --color-secondary: 80, 57, 116;
-
 
     --bg-gradient-inner: 90, 139, 183;
     --bg-gradient-outer: 80, 57, 116;
@@ -51,6 +49,13 @@
     --rocket-color-flame-top: 255, 255, 255;
     --rocket-color-flame-middle: 255, 255, 255;
     --rocket-color-flame-bottom: 138, 137, 124;
+
+    --btn-font-color: 47, 37, 25;
+    --btn-font-color-alt: 255, 255, 234;
+    --btn-color: 255, 255, 234;
+    --btn-color-hover-top: 138, 137, 124;
+    --btn-color-hover-bottom: 43, 44, 40;
+    --btn-color-shadow: 255, 255, 234;
 }
 
 [data-theme="martian"] {
@@ -72,7 +77,12 @@
     --rocket-color-flame-middle: 90, 139, 183;
     --rocket-color-flame-bottom: 80, 57, 116;
 
-    --btn-color: ;
+    --btn-font-color: 55, 6, 23;
+    --btn-font-color-alt: 255, 255, 255;
+    --btn-color: 244, 140, 6;
+    --btn-color-hover-top: 90, 139, 183;
+    --btn-color-hover-bottom: 80, 57, 116;
+    --btn-color-shadow: 0, 0, 0;
 }
 
 $bp-larger: 1200px;

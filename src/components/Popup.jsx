@@ -18,7 +18,7 @@ export default function Popup(props) {
             <div className="popup__content">
 
                 <div className="popup__close">
-                    <span onClick={props.close}>
+                    <span onMouseEnter={() => setTheme(0)} onClick={props.close}>
                         X
                     </span>
                 </div>

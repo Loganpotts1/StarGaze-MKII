@@ -35,7 +35,7 @@ export default function LandingPage() {
 
                     
                     <p className="header__text">
-                        Discover pictures and podcasts <br/>
+                        Uncover pictures and podcasts <br/>
                         from behind the scenes <br/>
                         at the international space station
                     </p>

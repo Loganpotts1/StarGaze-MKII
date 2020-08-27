@@ -1,5 +1,4 @@
 import React from "react";
-import HeadingTwo from "./HeadingTwo";
 
 export default function Popup(props) {
     

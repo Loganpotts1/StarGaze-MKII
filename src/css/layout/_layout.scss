@@ -3,15 +3,23 @@
     grid-template-columns: 100vw;
     grid-template-rows: 80px, min-content;
     color: rgba(var(--font-color), 1);
+    background-image: radial-gradient(circle, rgba(var(--bg-gradient-inner),.9) 0%, rgba(var(--bg-gradient-outer), .9) 100%), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .content {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        min-height: calc(100vh - 81px);
+
+        @media screen and (max-width: $bp-medium) {
+            min-height: calc(100vh - 80px);
+        }
+    }
 
     &--landing-page {
-        background-image: radial-gradient(circle, rgba(var(--bg-gradient-inner),.9) 0%, rgba(var(--bg-gradient-outer), .9) 100%), url(../images/hero.jpg);
-        background-size: cover;
-        background-position: center;
 
         .content {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
             display: grid;
             grid-template-columns: 
             [full-start] 1fr [center-start] 
@@ -20,15 +28,11 @@
             grid-template-rows: repeat(2, 1fr);
             grid-row-gap: 3rem;
             align-items: center;
-        
-            //TEST
-            min-height: calc(100vh - 81px);
-            //
+            
 
             @media screen and (max-width: $bp-medium) {
                 grid-template-rows: repeat(3, 1fr);
                 grid-row-gap: 0;
-                min-height: calc(100vh - 80px);
             }
         }
     }

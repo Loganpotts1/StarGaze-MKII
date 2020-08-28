@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../components/ThemeContext";
 import Navbar from "../components/Navbar";
 import Rocketship from "../components/Rocketship";
 import {
@@ -8,12 +9,17 @@ import {
 import Popup from "../components/Popup";
 
 export default function LandingPage() {
-
+    const [theme] = useContext(ThemeContext);
     const [popupToggled, setPopupToggled] = React.useState(true);
+
+
+    document.querySelector("body").setAttribute("data-theme", theme);
+
 
     function togglePopup() {
         setPopupToggled(!popupToggled);
     }
+
 
     return (
         <div className="container container--landing-page">
@@ -61,9 +67,11 @@ export default function LandingPage() {
 
             </main>
 
+
             {
-                popupToggled && <Popup close={() => togglePopup()}/>
+                popupToggled && <Popup close={togglePopup}/>
             }
+
 
         </div>
     );

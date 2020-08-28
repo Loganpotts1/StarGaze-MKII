@@ -11,30 +11,38 @@ export default function Navbar() {
     return (
         <nav className="nav">
 
-            <h2 className="nav__logo">
+
+            <a href="/" className="nav__logo">
                 StarGaze
-            </h2>
+            </a>
+
 
             <ul className="nav__items">
+
                 <li className="nav__item">
                     <a href="#0" className="nav__link">
                         Photos
                     </a>
                 </li>
+
                 <li className="nav__item">
                     <a href="#0" className="nav__link">
                         Audio
                     </a>
                 </li>
+
                 <li className="nav__item">
-                    <a href="#0" className="nav__link">
+                    <a href="/mars-rover" className="nav__link">
                         Mars Rover
                     </a>
                 </li>
+
             </ul>
 
-            <MoonMenu dropDown={() => {dropDown()}}/>
+
+            <MoonMenu dropDown={dropDown}/>
                 
+
         </nav>
     );
 }

@@ -16,9 +16,10 @@
     }
 
     &__logo {
-        cursor: pointer;
         font-family: var(--font-display);
         font-size: 30px;
+        text-decoration: none;
+        color: rgba(var(--font-color), 1);
         margin-left: calc(20px + 1vw);
 
         @media screen and (max-width: $bp-medium) {

@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../components/ThemeContext";
+import React from "react";
 import Axios from "axios";
 import Navbar from "../components/Navbar";
 
 export default function MarsPage() {
-    const [theme, setTheme] = useContext(ThemeContext);
+    const theme = window.sessionStorage.getItem("theme");
     const [isMounted, setIsMounted] = React.useState(false);
     const [photos,setPhotos] = React.useState([]);
     const [search, setSearch] = React.useState("");

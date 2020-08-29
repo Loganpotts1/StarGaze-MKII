@@ -1,8 +1,14 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import React from "react";
 
 export default function Popup(props) {
-    const [theme, setTheme] = useContext(ThemeContext);
+
+    function setTheme(theme) {
+        window.sessionStorage.setItem("theme", `${theme}`);
+    }
+
+    function hoverTheme(theme) {
+        document.querySelector("body").setAttribute("data-theme", theme);
+    }
     
 
     return (
@@ -12,7 +18,7 @@ export default function Popup(props) {
             <div className="popup__content">
 
                 <div className="popup__close">
-                    <span onMouseEnter={() => setTheme("default")} onClick={props.close}>
+                    <span onClick={props.close}>
                         X
                     </span>
                 </div>
@@ -22,13 +28,13 @@ export default function Popup(props) {
                 </h2>
 
                 <ul className="popup__list">
-                    <li className="popup__list-item" onMouseEnter={() => setTheme("default")} onClick={props.close}>
+                    <li className="popup__list-item" onMouseEnter={() => hoverTheme("default")} onClick={() => {setTheme("default");props.close()}}>
                         Default
                     </li>
-                    <li className="popup__list-item" onMouseEnter={() => setTheme("martian")} onClick={props.close}>
+                    <li className="popup__list-item" onMouseEnter={() => hoverTheme("martian")} onClick={() => {setTheme("martian");props.close()}}>
                         Martian
                     </li>
-                    <li className="popup__list-item" onMouseEnter={() => setTheme("1969")} onClick={props.close}>
+                    <li className="popup__list-item" onMouseEnter={() => hoverTheme("1969")} onClick={() => {setTheme("1969");props.close()}}>
                         1969
                     </li>
                 </ul>

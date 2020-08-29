@@ -5,7 +5,7 @@ export default function Rocketship() {
     return (
         <svg className="rocketship" width="651" height="466" viewBox="0 0 651 466" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="RocketShip">
-            <g clip-path="url(#clip0)">
+            <g clipPath="url(#clip0)">
             <g id="SmallPlanet3">
             <g id="Group" opacity="0.7">
             <path id="Vector" opacity="0.7" d="M159.117 398.975C163.488 398.975 167.031 395.439 167.031 391.077C167.031 386.715 163.488 383.179 159.117 383.179C154.746 383.179 151.203 386.715 151.203 391.077C151.203 395.439 154.746 398.975 159.117 398.975Z" fill="url(#paint0_linear)"/>
@@ -151,49 +151,49 @@ export default function Rocketship() {
             </g>
             <defs>
             <linearGradient id="paint0_linear" x1="159.117" y1="398.975" x2="159.117" y2="383.184" gradientUnits="userSpaceOnUse">
-            <stop className="rocketship__planet" stop-color="#808080" stop-opacity="0.25"/>
-            <stop offset="0.54" className="rocketship__planet" stop-color="#808080" stop-opacity="0.12"/>
-            <stop offset="1" className="rocketship__planet" stop-color="#808080" stop-opacity="0.1"/>
+            <stop className="rocketship__planet" stopColor="#808080" stopOpacity="0.25"/>
+            <stop offset="0.54" className="rocketship__planet" stopColor="#808080" stopOpacity="0.12"/>
+            <stop offset="1" className="rocketship__planet" stopColor="#808080" stopOpacity="0.1"/>
             </linearGradient>
             <linearGradient id="paint1_linear" x1="10307.7" y1="7790.22" x2="10307.7" y2="7486.54" gradientUnits="userSpaceOnUse">
-            <stop className="rocketship__planet" stop-color="#808080" stop-opacity="0.25"/>
-            <stop offset="0.54" className="rocketship__planet" stop-color="#808080" stop-opacity="0.12"/>
-            <stop offset="1" className="rocketship__planet" stop-color="#808080" stop-opacity="0.1"/>
+            <stop className="rocketship__planet" stopColor="#808080" stopOpacity="0.25"/>
+            <stop offset="0.54" className="rocketship__planet" stopColor="#808080" stopOpacity="0.12"/>
+            <stop offset="1" className="rocketship__planet" stopColor="#808080" stopOpacity="0.1"/>
             </linearGradient>
             <linearGradient id="paint2_linear" x1="287.682" y1="334.954" x2="287.682" y2="371.812" gradientUnits="userSpaceOnUse">
             <stop className="rocketship__flame--color-1"/>
-            <stop offset="0.31" className="rocketship__flame--color-2" stop-color="#FCCC63"/>
-            <stop offset="0.77" className="rocketship__flame--color-3" stop-color="#F55F44"/>
+            <stop offset="0.31" className="rocketship__flame--color-2" stopColor="#FCCC63"/>
+            <stop offset="0.77" className="rocketship__flame--color-3" stopColor="#F55F44"/>
             </linearGradient>
             <linearGradient id="paint3_linear" x1="315.381" y1="334.954" x2="315.381" y2="371.812" gradientUnits="userSpaceOnUse">
             <stop className="rocketship__flame--color-1"/>
-            <stop offset="0.31" className="rocketship__flame--color-2" stop-color="#FCCC63"/>
-            <stop offset="0.77" className="rocketship__flame--color-3" stop-color="#F55F44"/>
+            <stop offset="0.31" className="rocketship__flame--color-2" stopColor="#FCCC63"/>
+            <stop offset="0.77" className="rocketship__flame--color-3" stopColor="#F55F44"/>
             </linearGradient>
             <linearGradient id="paint4_linear" x1="243.464" y1="334.954" x2="243.464" y2="371.812" gradientUnits="userSpaceOnUse">
             <stop className="rocketship__flame--color-1"/>
-            <stop offset="0.31" className="rocketship__flame--color-2" stop-color="#FCCC63"/>
-            <stop offset="0.77" className="rocketship__flame--color-3" stop-color="#F55F44"/>
+            <stop offset="0.31" className="rocketship__flame--color-2" stopColor="#FCCC63"/>
+            <stop offset="0.77" className="rocketship__flame--color-3" stopColor="#F55F44"/>
             </linearGradient>
             <linearGradient id="paint5_linear" x1="360.083" y1="334.954" x2="360.083" y2="371.812" gradientUnits="userSpaceOnUse">
             <stop className="rocketship__flame--color-1"/>
-            <stop offset="0.31" className="rocketship__flame--color-2" stop-color="#FCCC63"/>
-            <stop offset="0.77" className="rocketship__flame--color-3" stop-color="#F55F44"/>
+            <stop offset="0.31" className="rocketship__flame--color-2" stopColor="#FCCC63"/>
+            <stop offset="0.77" className="rocketship__flame--color-3" stopColor="#F55F44"/>
             </linearGradient>
             <linearGradient id="paint6_linear" x1="93114.8" y1="268830" x2="93114.8" y2="16304.8" gradientUnits="userSpaceOnUse">
-            <stop className="rocketship__planet" stop-color="#808080" stop-opacity="0.25"/>
-            <stop offset="0.54" className="rocketship__planet" stop-color="#808080" stop-opacity="0.12"/>
-            <stop offset="1" className="rocketship__planet" stop-color="#808080" stop-opacity="0.1"/>
+            <stop className="rocketship__planet" stopColor="#808080" stopOpacity="0.25"/>
+            <stop offset="0.54" className="rocketship__planet" stopColor="#808080" stopOpacity="0.12"/>
+            <stop offset="1" className="rocketship__planet" stopColor="#808080" stopOpacity="0.1"/>
             </linearGradient>
             <linearGradient id="paint7_linear" x1="30554.4" y1="16251.5" x2="30554.4" y2="13553.4" gradientUnits="userSpaceOnUse">
-            <stop className="rocketship__planet" stop-color="#808080" stop-opacity="0.25"/>
-            <stop offset="0.54" className="rocketship__planet" stop-color="#808080" stop-opacity="0.12"/>
-            <stop offset="1" className="rocketship__planet" stop-color="#808080" stop-opacity="0.1"/>
+            <stop className="rocketship__planet" stopColor="#808080" stopOpacity="0.25"/>
+            <stop offset="0.54" className="rocketship__planet" stopColor="#808080" stopOpacity="0.12"/>
+            <stop offset="1" className="rocketship__planet" stopColor="#808080" stopOpacity="0.1"/>
             </linearGradient>
             <linearGradient id="paint8_linear" x1="9280.22" y1="16153.2" x2="9280.22" y2="14837" gradientUnits="userSpaceOnUse">
-            <stop className="rocketship__planet" stop-opacity="0.25"/>
-            <stop offset="0.54" className="rocketship__planet" stop-opacity="0.12"/>
-            <stop offset="1" className="rocketship__planet" stop-color="#808080" stop-opacity="0.1"/>
+            <stop className="rocketship__planet" stopOpacity="0.25"/>
+            <stop offset="0.54" className="rocketship__planet" stopOpacity="0.12"/>
+            <stop offset="1" className="rocketship__planet" stopColor="#808080" stopOpacity="0.1"/>
             </linearGradient>
             <clipPath id="clip0">
             <rect className="rocketship__color--fill" width="651" height="466" fill="white"/>

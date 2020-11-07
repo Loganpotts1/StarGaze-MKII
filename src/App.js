@@ -13,25 +13,25 @@ export default function App() {
   return (
     <ThemeProvider>
       <Router>
-      <Switch>
+        <Switch>
 
-        <Route exact path="/">
-          <LandingPage />
-        </Route>
+          <Route exact path="/">
+            <LandingPage />
+          </Route>
 
-        {/* <Route path="/photos">
-          <PhotosPage />
-        </Route>
+          {/* <Route path="/photos">
+            <PhotosPage />
+          </Route>
 
-        <Route path="/audio">
-          <AudioPage />
-        </Route> */}
+          <Route path="/audio">
+            <AudioPage />
+          </Route> */}
 
-        <Route path="/mars-rover">
-          <MarsPage />
-        </Route>
+          <Route path="/mars-rover">
+            <MarsPage />
+          </Route>
 
-      </Switch>
+        </Switch>
       </Router>
     </ThemeProvider>
   );

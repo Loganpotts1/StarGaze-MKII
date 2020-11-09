@@ -9,7 +9,7 @@
     @media screen and (max-width: $bp-medium) {
         grid-column: center-start / center-end;
         grid-row: 3 / 4;
-        
+        padding-top: 10rem;
     }
 
     @media screen and (max-width: $bp-small) {

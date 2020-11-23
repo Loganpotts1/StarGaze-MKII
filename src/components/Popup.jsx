@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Popup(props) {
+    const { close } = props;
 
     function setTheme(theme) {
         window.sessionStorage.setItem("theme", `${theme}`);
@@ -18,7 +19,7 @@ export default function Popup(props) {
             <div className="popup__content">
 
                 <div className="popup__close">
-                    <span onClick={props.close}>
+                    <span onClick={close}>
                         X
                     </span>
                 </div>
@@ -28,15 +29,31 @@ export default function Popup(props) {
                 </h2>
 
                 <ul className="popup__list">
-                    <li className="popup__list-item" onMouseEnter={() => hoverTheme("default")} onClick={() => {setTheme("default");props.close()}}>
+
+                    <li
+                    className="popup__list-item"
+                    onMouseEnter={() => hoverTheme("default")}
+                    onClick={() => {setTheme("default");close()}}
+                    >
                         Default
                     </li>
-                    <li className="popup__list-item" onMouseEnter={() => hoverTheme("martian")} onClick={() => {setTheme("martian");props.close()}}>
+
+                    <li 
+                    className="popup__list-item" 
+                    onMouseEnter={() => hoverTheme("martian")} 
+                    onClick={() => {setTheme("martian");close()}}
+                    >
                         Martian
                     </li>
-                    <li className="popup__list-item" onMouseEnter={() => hoverTheme("1969")} onClick={() => {setTheme("1969");props.close()}}>
+
+                    <li
+                    className="popup__list-item"
+                    onMouseEnter={() => hoverTheme("1969")}
+                    onClick={() => {setTheme("1969");close()}}
+                    >
                         1969
                     </li>
+                    
                 </ul>
 
             </div>

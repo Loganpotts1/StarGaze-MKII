@@ -7,11 +7,10 @@ import {
 } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import MarsPage from "./pages/MarsPage";
-import { ThemeProvider } from "./components/ThemeContext";
+
 
 export default function App() {
   return (
-    <ThemeProvider>
       <Router>
         <Switch>
 
@@ -33,6 +32,5 @@ export default function App() {
 
         </Switch>
       </Router>
-    </ThemeProvider>
   );
 }

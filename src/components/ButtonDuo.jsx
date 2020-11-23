@@ -7,7 +7,7 @@ export default function ButtonDuoFirst(props) {
 
             <button className="btn-duo btn-duo--1">
                 <span className="btn-duo__text">
-                    {props.text}
+                    {props.children}
                 </span> 
             </button>
             
@@ -22,7 +22,7 @@ function ButtonDuoLast(props) {
 
             <button className="btn-duo btn-duo--2">
                 <span className="btn-duo__text">
-                    {props.text}
+                    {props.children}
                 </span> 
             </button>
 

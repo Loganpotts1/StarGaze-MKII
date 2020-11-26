@@ -53,71 +53,67 @@
     }
 }
 
+%transform {
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@mixin ping-animation($length) {
+    animation: ping $length ease-in-out infinite both;
+}
+
 #Ship {
 	animation: vibrate 0.25s linear infinite both;
 }
 #FarLeftFlame, #FarRightFlame {
+    @extend %transform;
     animation: pulsate-up 2s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
 }
 #LeftFlame,#RightFlame {
+    @extend %transform;
     animation: pulsate-down .15s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
 }
 #Star1 {
-    animation: ping 4s linear infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(4s);
 }
 #Star2 {
-    animation: ping 0.8s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(.8s);
 }
 #Star3 {
-    animation: ping 1s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(1s);
 }
 #Star4 {
-    animation: ping 2s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(2s);
 }
 #Star5 {
-    animation: ping 3s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(3s);
 }
 #Star6 {
-    animation: ping 4s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(4s);
 }
 #Star7 {
-    animation: ping 3.4s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(3.4s);
 }
 #Star8 {
-    animation: pin 2.6s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(2.6s);
 }
 #Star9 {
-    animation: ping 2.6s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(2.6s);
 }
 #Star10 {
-    animation: ping 3.4s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(3.4s);
 }
 #Star11 {
-    animation: ping 4s ease-in-out infinite both;
-    transform-origin: center;
-    transform-box: fill-box;
+    @extend %transform;
+    @include ping-animation(4s);
 }

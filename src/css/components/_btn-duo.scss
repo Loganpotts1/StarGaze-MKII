@@ -35,7 +35,10 @@
         height: 100%;
         width: 10px;
         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-        background-image: linear-gradient(rgba(var(--btn-color-hover-top), 1), rgba(var(--btn-color-hover-bottom), 1));
+        background-image: linear-gradient(
+                rgba(var(--btn-color-hover-top), 1),
+                rgba(var(--btn-color-hover-bottom), 1)
+            );
         transform: scaleY(0);
         transition: transform .1s, width cubic-bezier(1,0,0,1) .2s .1s, background-color .1s;
     }
